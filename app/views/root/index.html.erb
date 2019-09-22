@@ -1,0 +1,21 @@
+<div class="notice">
+<% if flash[:notice] %>
+	<p><%= flash[:notice] %></p>
+<% else %>
+	<p><%= flash[:error] %></p>
+<% end %>
+</div>
+
+<div>
+	<h1>welcom to <span class="glyphicon glyphicon-book" aria-hidden="true"></span>Bookers  !!</h1>
+	<p>In Bookers,</p>
+	<p>you can share and exchange your options,inpressions,and emotions<br>
+	about varioius books!</p>
+</div>
+
+<div class=root_btn>
+	<%= link_to 'Log in',  user_session_path, class: "btn btn-block btn-info" %>
+	<%= link_to 'Sign Up', new_user_registration_path, class: "btn btn-block btn-success" %>
+</div>
+	<p>CopyRight Infratop.inc</p>
+
